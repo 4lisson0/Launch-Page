@@ -10,7 +10,7 @@ body {
     display: grid;
     grid-template-areas:
         "aside main";
-    background-image: url(/assets/background.svg);
+    background-image: url(assets/background.svg);
     background-size: cover;
     overflow: hidden;
 }
