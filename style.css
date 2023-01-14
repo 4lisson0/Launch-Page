@@ -132,13 +132,17 @@ img {
         flex-direction: column;
         justify-content: center;
         padding: 6rem;
+        background-image: url(/assets/background.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
     }
 
     h1 {
         text-align: center;
         font-family: 'Quicksand';
         color: #ffff;
-        padding: 1rem;
+        font-size: 1rem;
     }
 
     p {
@@ -149,22 +153,22 @@ img {
     }
 
     .p2 {
-        font-size: 25px;
+        font-size: 12px;
     }
 
     .time {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        font-size: 25px;
-        margin-left: 50px;
+        font-size: 14px;
+        margin-left: 4px;
     }
 
     .number-time {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .more-information {
