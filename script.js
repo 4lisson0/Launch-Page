@@ -3,7 +3,7 @@ const hoursEL = document.getElementById("hours");
 const minsEL = document.getElementById("mins");
 const secoundsEL = document.getElementById("secounds");
 
-const newDate = "15 jan 2024";
+const newDate = "17 jan 2024";
 
 function countDown() {
     const newYearDate = new Date(newDate);
@@ -20,6 +20,11 @@ function countDown() {
     hoursEL.innerHTML = formatTime(hours);
     minsEL.innerHTML = formatTime(mins);
     secoundsEL.innerHTML = formatTime(secounds);
+
+    if (currentDate > newYearDate){
+        clearInterval (interval)
+    }
+
 }
 
 function formatTime(time) {
@@ -28,4 +33,4 @@ function formatTime(time) {
 
 countDown();
 
-setInterval(countDown, 1000);
+var interval = setInterval(countDown, 1000);
